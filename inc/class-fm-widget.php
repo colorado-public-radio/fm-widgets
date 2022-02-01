@@ -26,6 +26,12 @@ abstract class FM_Widget extends WP_Widget {
 		}
 	}
 
+	public function widget() {
+		/**
+		 * This method is required to avoid errors from WP core.
+		 */
+	}
+
 	protected function fieldmanager_field() {
 		return new Fieldmanager_Group( [
 			'name' => $this->group_name(),
