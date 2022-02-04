@@ -26,7 +26,7 @@ abstract class FM_Widget extends WP_Widget {
 		}
 	}
 
-	public function widget() {
+	public function widget($args, $instance) {
 		/**
 		 * This method is required to avoid errors from WP core.
 		 */
